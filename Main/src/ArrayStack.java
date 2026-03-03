@@ -9,7 +9,10 @@ public class ArrayStack implements IStack{
 	private char[] data;
 	private int top = -1;
 	private int capacity;
-	
+	/**
+	 * Constructor
+	 * @param capacity
+	 */
 	public ArrayStack(int capacity) {
 		this.capacity = capacity;
 		data = new char[capacity];

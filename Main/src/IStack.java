@@ -6,9 +6,9 @@
  * Interface contains main Stack operations
  */
 public interface IStack {
-	void push(char elem);
-	char pop();
-	char peek();
-	boolean isEmpty();
+	void push(char elem); // insert element
+	char pop(); // return element
+	char peek(); // return element
+	boolean isEmpty(); // check if the stack is empty or not
 
 }

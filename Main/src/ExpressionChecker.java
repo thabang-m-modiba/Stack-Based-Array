@@ -10,13 +10,16 @@ public class ExpressionChecker {
 	private int capacity;
 	/**
 	 * Constructor
-	 * @param stack - Expression to be validated
 	 */
 	public ExpressionChecker(int capacity) {
 		this.capacity = capacity;
 		stack = new ArrayStack(capacity);
 	}
-	
+	/**
+	 * A method to validate the expression
+	 * @param expression
+	 * @return
+	 */
 	public boolean checkExpression(String expression) {
 		for(int i = 0; i < expression.length(); i++) {
 			char ch = expression.charAt(i);
@@ -40,7 +43,7 @@ public class ExpressionChecker {
 		return stack.isEmpty();
 	}
 	/**
-	 * 
+	 * A method to check if a pair of char is matching
 	 * @param top
 	 * @param ch
 	 * @return
@@ -60,6 +63,7 @@ public class ExpressionChecker {
 	}
 
 	/**
+	 * A getter method that returns stack
 	 * @return the stack
 	 */
 	public ArrayStack getStack() {
@@ -67,7 +71,8 @@ public class ExpressionChecker {
 	}
 	
 	/**
-	 * @return
+	 * A getter method that returns capacity
+	 * @return the capacity of the stack
 	 */
 	public int getCapacity() {
 		return capacity;
