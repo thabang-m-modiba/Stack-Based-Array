@@ -5,7 +5,7 @@
   * Last element added is the first to be removed.
 * Main Stack Operation:
   * <code>push() // inserts an element</code>
-  * <code>Oject push() // removes and returns the last inserted element</code>
+  * <code>Oject pop() // removes and returns the last inserted element</code>
 * Auxiliary Stack operstions:
   * <code>Object top() // returns the last inserted element without removing it</code>
   * <code>Integer size() // returns the number of elements stored</code>
