@@ -25,7 +25,7 @@ public class ArrayStack implements IStack{
 		if(top == capacity - 1) {
 			throw new IllegalStateException("Stack Overflow");
 		}
-		data[++top] = elem;
+		data[++top] = elem; // Should this be top++?
 		
 	}
 
