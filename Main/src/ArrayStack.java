@@ -21,6 +21,7 @@ public class ArrayStack implements IStack{
 	@Override
 	public void push(char elem) {
 		// TODO Auto-generated method stub
+  // Create a isFull() private method
 		if(top == capacity - 1) {
 			throw new IllegalStateException("Stack Overflow");
 		}
